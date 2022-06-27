@@ -1,0 +1,11 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    background-image: url('../images/waleski.png') !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,11 @@
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: deepskyblue;
+    background-image: url("../images/kitten.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

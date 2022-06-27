@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: deepskyblue;
+    background-image: url('../images/nobanho.jpeg') !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+table tr td{ 
+    font-size: 12px !important; 
+}

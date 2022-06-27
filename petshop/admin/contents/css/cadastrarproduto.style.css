@@ -1,0 +1,25 @@
+body, html{
+    height: 100%;
+}
+
+body{
+    background-image: url("../images/nobanho.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+div{
+    box-sizing: border-box !important;
+    overflow: hidden;
+}
+
+.setpreview{
+    min-width: 250px;
+    min-height: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: gray;
+    border: solid 1px rgba(0,0,0,0.9) !important;
+
+}

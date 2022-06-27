@@ -1,0 +1,51 @@
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: red;
+  background-image: url(../images/dogao.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-recuperar {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-recuperar .checkbox {
+  font-weight: 400;
+}
+
+.form-recuperar .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-recuperar input[type="email"] {
+ border-radius: 30px;
+ padding: 13px !important;
+}
+
+.form-recuperar button {
+    border-radius: 30px;
+}
+
+.label-email{   
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
