@@ -87,7 +87,7 @@ $final .= ($valor_final*100);
 
                                     <div class="mb-3">
                                         <label class="form-label">Nome</label>
-                                        <input type="text" class="form-control"  aria-describedby="nome" name="nome" placeholder="Nome" value="<?=$linha['nome']?>" >
+                                        <input type="text" class="form-control"  aria-describedby="nome" name="nome" placeholder="Nome" value="<?=utf8_encode($linha['nome'])?>" >
                                     </div>
 
 
@@ -95,7 +95,7 @@ $final .= ($valor_final*100);
 
                                         <div class="col">
                                             <label class="form-label">Endereço</label>
-                                            <input type="text" class="form-control"  aria-describedby="endereco" name="endereco" placeholder="Endereço" value="<?=$linha['endereco']?>" >
+                                            <input type="text" class="form-control"  aria-describedby="endereco" name="endereco" placeholder="Endereço" value="<?=utf8_encode($linha['endereco'])?>" >
                                         </div>
 
                                         <div class="col">
