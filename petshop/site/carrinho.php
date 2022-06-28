@@ -118,7 +118,7 @@
 															<input type="radio" name="remover" value="<?=$dados['idProduto']?>">																
 														</td>
 														<td data-title="Nome">
-															<?=$linha['nome']?>															
+															<?=utf8_encode($linha['nome'])?>															
 														</td>						
 														<td class="cell" data-title="Preço">
 															<?=$linha['preco']?>
@@ -127,7 +127,7 @@
 															<?=$linha['qtd']?>
 														</td>
 														<td class="cell" data-title="Descrição">
-															<?=$linha['descricao']?>
+															<?=utf8_encode($linha['descricao'])?>
 														</td>
 														<td class="cell" data-title="Quantidade">
 															<?=$dados['Quantidade']?>

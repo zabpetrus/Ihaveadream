@@ -37,7 +37,7 @@
 		?>
 		<script type="text/javascript">
 			alert('Os dados não foram preenchidos, verifique novamente!');
-			location.href = "usuariso.php";
+			location.href = "usuario.php";
 		</script>
 		<?php
 	}

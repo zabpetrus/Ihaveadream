@@ -98,7 +98,7 @@
 											</td>
 
 											<td class="cell" data-title="Nome">
-												<?=$linha['nome']?>
+												<?=utf8_encode($linha['nome'])?>
 											</td>
 
 											<td class="cell" data-title="Telefone">

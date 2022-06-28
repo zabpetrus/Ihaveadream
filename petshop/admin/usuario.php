@@ -44,57 +44,63 @@
 	        	$seuCampoNasc.mask('00/00/0000', {reverse: false});
     		});
 		</script>
-		<div class="wrapper">
-			<div class="inner">
-				
-				<form action="atualizar.php" method="POST">
-					<h3>Meus Dados</h3>
-					<div class="form-row">
-						<div class="form-wrapper">
-							<label for="nome">Nome *</label>
-							<input type="text" name="nome" class="form-control" value="<?=$linha['nome']?>" required>
-						</div>
-						<div class="form-wrapper">
-							<label for="telefone">Telefone *</label>
-							<input type="text" name="telefone" id="TEL" class="form-control" value="<?=$linha['telefone']?>" required>
-						</div>
+
+		<div class="container-fluid">
+			<div class="row">
+					<div class="col-md-6 mx-auto">
+					<div class="p-4 bg-light">
+						
+						<form action="atualizar.php" method="POST">
+							<h3>Meus Dados</h3>
+							<div class="form-row">
+								<div class="form-wrapper">
+									<label for="nome">Nome *</label>
+									<input type="text" name="nome" class="form-control" value="<?=$linha['nome']?>" required>
+								</div>
+								<div class="form-wrapper">
+									<label for="telefone">Telefone *</label>
+									<input type="text" name="telefone" id="TEL" class="form-control" value="<?=$linha['telefone']?>" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-wrapper">
+									<label for="endereco">Endereço *</label>
+									<input type="text" name="endereco" class="form-control" value="<?=$linha['endereco']?>" required>
+								</div>
+								<div class="form-wrapper">
+									<label for="data">Data de Nascimento *</label>
+									<input type="text" name="data" id="NASC" class="form-control" value="<?=$linha['data']?>" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-wrapper">
+									<label for="email">E-mail *</label>
+									<input type="text" name="email" class="form-control" value="<?=$linha['email']?>" required>
+								</div>
+								<div class="form-wrapper">
+									<label for="cpf">CPF *</label>
+									<input type="text" name="cpf" id="CPF" class="form-control" value="<?=$linha['cpf']?>" maxlength="14" disabled >
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-wrapper">
+									<label for="senha">Senha *</label>
+									<input type="password" name="senha" class="form-control" placeholder="Senha (Deixe em branco caso não queira alterar)">
+								</div>
+								<div class="form-wrapper">
+									<label for="confirmar-senha">Confirme a Senha *</label>
+									<input type="password" name="confirmar-senha" class="form-control" placeholder="Senha (Deixe em branco caso não queira alterar)">
+								</div>
+							</div>
+							<button class="btn btn-primary mt-3 mb-3 mx-auto" data-text="Atualizando">
+								<span>Atualizar</span>
+							</button>
+						</form>
 					</div>
-					<div class="form-row">
-						<div class="form-wrapper">
-							<label for="endereco">Endereço *</label>
-							<input type="text" name="endereco" class="form-control" value="<?=$linha['endereco']?>" required>
-						</div>
-						<div class="form-wrapper">
-							<label for="data">Data de Nascimento *</label>
-							<input type="text" name="data" id="NASC" class="form-control" value="<?=$linha['data']?>" required>
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="form-wrapper">
-							<label for="email">E-mail *</label>
-							<input type="text" name="email" class="form-control" value="<?=$linha['email']?>" required>
-						</div>
-						<div class="form-wrapper">
-							<label for="cpf">CPF *</label>
-							<input type="text" name="cpf" id="CPF" class="form-control" value="<?=$linha['cpf']?>" maxlength="14" disabled >
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="form-wrapper">
-							<label for="senha">Senha *</label>
-							<input type="password" name="senha" class="form-control" placeholder="Senha (Deixe em branco caso não queira alterar)">
-						</div>
-						<div class="form-wrapper">
-							<label for="confirmar-senha">Confirme a Senha *</label>
-							<input type="password" name="confirmar-senha" class="form-control" placeholder="Senha (Deixe em branco caso não queira alterar)">
-						</div>
-					</div>
-					<button data-text="Atualizando">
-						<span>Atualizar</span>
-					</button>
-				</form>
+				</div>
 			</div>
 		</div>
+		
 		
 		<script src="contents/vendor/date-picker/js/datepicker.js"></script>
 		<script src="contents/vendor/date-picker/js/datepicker.en.js"></script>

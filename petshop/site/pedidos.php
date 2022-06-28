@@ -106,15 +106,15 @@
 												</td>
 
 												<td data-title="Nome">													
-													<?=$dados['nome']?>
+													<?=utf8_encode($dados['nome'])?>
 												</td>
 
 												<td data-title="Endereço" >
-													<?=$dados['endereco']?>
+													<?=utf8_encode($dados['endereco'])?>
 												</td>
 
 												<td data-title="Produto">
-													<?=$produto['nome']?>
+													<?=utf8_encode($produto['nome'])?>
 												</td>
 
 												<td data-title="Data do Pedido">

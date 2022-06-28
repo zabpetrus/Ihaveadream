@@ -3,5 +3,10 @@ html, body{
 }
 
 body{
+    background-image: url("../images/nobanho.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: deepskyblue;
     
 }

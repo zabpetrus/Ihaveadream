@@ -136,14 +136,14 @@
                                 <div class="col">
                                     <div class="card shadow-sm">
 
-                                        <img src="contents/<?=$linha['img']?>" class="img-responsive" title="<?=$linha['nome']?>" >
+                                        <img src="contents/<?=$linha['img']?>" class="img-responsive" title="<?=utf8_encode($linha['nome'])?>" >
 
                                         <div class="card-body">
 
                                         <p class="card-text">
-                                            <h5 class="text-primary mb-2" > <?=$linha['nome']?> </h5>
+                                            <h5 class="text-primary mb-2" > <?=utf8_encode($linha['nome'])?> </h5>
                                             <p>
-                                                <?= $linha['descricao'] ?>
+                                                <?= utf8_encode( $linha['descricao'] )?>
                                             </p>
                                         </p>
                                         <div class="container-fluid">
@@ -161,16 +161,16 @@
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="staticBackdropLabel<?= $linha['id']?>"> <?=$linha['nome']?></h5>
+                                                <h5 class="modal-title" id="staticBackdropLabel<?= $linha['id']?>"> <?=utf8_encode($linha['nome'])?></h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <img src="contents/<?=$linha['img']?>" class="img-responsive" title="<?=$linha['nome']?> " >
+                                                        <img src="contents/<?=$linha['img']?>" class="img-responsive" title="<?=utf8_encode($linha['nome'])?> " >
                                                     </div>
                                                     <div class="col-md-8">
-                                                    <p><?= $linha['descricao'] ?></p>
+                                                    <p><?= utf8_encode( $linha['descricao']) ?></p>
                                                         <div class="btn-group" role="group" aria-label="Basic example">
 
                                                             <button type="button" class="btn btn-outline-primary" onclick="remover(<?= $linha['id']?>)">-</button>                                                            

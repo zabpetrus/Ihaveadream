@@ -21,12 +21,11 @@
 		<link rel="stylesheet" href="contents/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 		<link rel="stylesheet" href="contents/vendor/date-picker/css/datepicker.min.css">
 		<link rel="stylesheet" href="contents/css/style.css">
+
 		
 		<!--===============================================================================================-->
-		  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<!--===============================================================================================-->
 	</head>
 	<body>
@@ -95,10 +94,13 @@
 				</form>
 			</div>
 		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		
-		<script src="vendor/date-picker/js/datepicker.js"></script>
-		<script src="vendor/date-picker/js/datepicker.en.js"></script>
-		<script src="js/main.js"></script>
+		<script src="contents/vendor/date-picker/js/datepicker.js"></script>
+		<script src="contents/vendor/date-picker/js/datepicker.en.js"></script>
+		<script src="contents/js/main.js"></script>
 		
 	</body>
 </html>

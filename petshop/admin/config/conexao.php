@@ -1,11 +1,11 @@
 <?php
 
 
-$dbname = "epiz_31951169_db";
+$dbname = "epiz_32051686_db";
 
-$dbuser = "epiz_31951169";
-$dbpass = "TCbNPP3mNzA";
-$dbhost = "sql309.epizy.com";
+$dbuser = "epiz_32051686";
+$dbpass = "oPYRvRwGGLJ8chC";
+$dbhost = "sql208.epizy.com";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 if(!$conn){
 

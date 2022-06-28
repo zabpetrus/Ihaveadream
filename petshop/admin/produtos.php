@@ -108,7 +108,7 @@
 							<tr>
 								<td class="cell"><input type="radio" name="remover" value="<?=$linha['id']?>"></td>
 								<td class="cell" data-title="Nome">									
-									<?=$linha['nome']?>
+									<?=utf8_encode($linha['nome'])?>
 									</td>								
 								<td class="cell" data-title="Endereço" >
 									<?=$linha['preco']?>
@@ -117,7 +117,7 @@
 									<?=$linha['qtd']?>
 								</td>
 								<td class="cell" data-title="Data do Pedido" >
-									<?=$linha['descricao']?>
+									<?=utf8_encode($linha['descricao'])?>
 								</td>
 							</tr>
 							<?php

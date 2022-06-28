@@ -88,8 +88,8 @@
                 <div class="container-sm">
                     <div class="pricing-inner section-inner">
                         <div class="pricing-header text-center">
-                            <h2 class="section-title mt-0"><?=$linha['nome']?></h2>
-                            <p class="section-paragraph mb-0"><?=$linha['descricao']?></p>
+                            <h2 class="section-title mt-0"><?=utf8_encode($linha['nome'])?></h2>
+                            <p class="section-paragraph mb-0"><?=utf8_encode($linha['descricao'])?></p>
                         </div>
 						<div class="pricing-tables-wrap">
                             <div class="pricing-table">

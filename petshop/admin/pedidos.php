@@ -5,8 +5,6 @@
 	include_once "config/conexao.php";
 	include_once "funcoes/funcoes.php";
 
-	include_once "menu.php";
-
 		if (isset($_SESSION['login'])){
 
 			$busca = "SELECT * FROM `ps_pedidos` ORDER BY `id`";
@@ -96,13 +94,13 @@
 										<tr>
 											<td class="cell" data-title="Nome">
 												<input type="radio" name="remover" value="<?=$linha['id']?>">
-												<?=$dados['nome']?>
+												<?=utf8_encode($dados['nome'])?>
 											</td>								
 											<td class="cell" data-title="Endereço">
-												<?=$dados['endereco']?>
+												<?=utf8_encode($dados['endereco'])?>
 											</td>
 											<td class="cell" data-title="Produto">
-												<?=$produto['nome']?>
+												<?=utf8_encode($produto['nome'])?>
 											</td>
 											<td class="cell" data-title="Data do Pedido">
 												<?=$linha['data']?>
