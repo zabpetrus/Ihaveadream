@@ -37,6 +37,18 @@ for($i; $i < 9; $i++){
 
 $final .= ($valor_final*100);
 
+if($_SERVER['REQUEST_METHOD'] === 'POST')
+{
+    if(array_key_exists('btn1', $_POST))
+    {
+        if(cardIsValid($_POST['cc-numero']))
+        {
+            echo "<script> alert('Ok!!!'); window.redirect='index.php'; </script>";
+        }
+        
+    }
+}
+
 
 
 ?>
@@ -106,7 +118,7 @@ $final .= ($valor_final*100);
                                     </div>
 
                                     <div class="text-center">
-                                        <button id="btn1" class="btn btn-primary" >Continuar</button> 
+                                        <button type="submit" id="btn1" name="btn1" class="btn btn-primary" value="1" >Continuar</button> 
                                     </div>                                
 
                                 </form>
@@ -128,7 +140,7 @@ $final .= ($valor_final*100);
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="cc-numero">Número do cartão de crédito</label>
-                                        <input type="text" class="form-control" id="cc-numero" placeholder="" required>
+                                        <input type="text" class="form-control" id="cc-numero" name="cc-numero" placeholder="" required>
                                         <div class="invalid-feedback">
                                         O número do cartão de crédito é obrigatório.
                                         </div>
@@ -151,8 +163,8 @@ $final .= ($valor_final*100);
                                     </div>
                                     </div>
 
-                                <div class="text-center">
-                                   <button id="btn2" class="btn btn-primary" >Continuar</button> 
+                                    <div class="text-center">
+                                   <button type="submit" id="btn2" name="btn2" class="btn btn-primary" value="2" >Continuar</button> 
                                 </div>
 
                                 <form>
@@ -188,7 +200,7 @@ $final .= ($valor_final*100);
             $("#btn2").on("click", function(e){
                 $("#formcartao").submit();
                 alert("O pagamento foi feito com sucesso!");
-                window.location.href = "index.php";
+               // window.location.href = "index.php";
                 return false;
             });
 

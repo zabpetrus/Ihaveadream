@@ -10,51 +10,42 @@
 		<?php
 	}else{
 		?>
+		<!DOCTYPE html>
 		<html>
 			<head>
 				<meta charset="utf-8">
 				<title>Pet Shop - 4MOD</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<link rel="stylesheet" href="../fonts/linearicons/style.css">
-				<link rel="stylesheet" href="../fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-				<link rel="stylesheet" href="../vendor/date-picker/css/datepicker.min.css">
-				<link rel="stylesheet" href="../css/style.css">
-				
+				<link rel="stylesheet" href="../contents/css/cadastrado.styles.css" />
+				<link rel="icon" type="image/x-icon" href="../contents/images/favicon.ico">
+										
 				<!--===============================================================================================-->
-				  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-				  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-				  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-				  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 				<!--===============================================================================================-->
 			</head>
-			<body>
-				<script type="text/javascript">
-					$(document).ready(function () { 
-			        	var $seuCampoCpf = $("input#CPF");
-			        	$seuCampoCpf.mask('000.000.000-00', {reverse: false});
+			<body class="d-flex h-100 text-center bg-dark">
+				
+				<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+					<div class="px-3 bg-light">
 
-			        	var $seuCampoTel = $("input#TEL");
-			        	$seuCampoTel.mask('(00) 000000000', {reverse: false});
-		    		});
-				</script>
-				<div class="wrapper">
-					<div class="inner">
-						
+					<div class="p-5">
 						<form action="../admin/login_page.php" action="admin">
 							<h3>Cadastrado</h3>
 							<div class="form-row">
 								<p>Seu cadastro foi realizado com sucesso, efetue o login e confira o nosso site.</p>
 							</div>
-							<button data-text="Login">
+							<button class="btn btn-primary" data-text="Login">
 								<span>Login</span>
 							</button>
 						</form>
 					</div>
+						
+						
+					</div>
 				</div>
 				
-				<script src="../vendor/date-picker/js/datepicker.js"></script>
-				<script src="../vendor/date-picker/js/datepicker.en.js"></script>
-				<script src="../js/main.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+				<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 				
 			</body>
 		</html>
